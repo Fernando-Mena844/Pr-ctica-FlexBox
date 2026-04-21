@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Unica+One&display=swap');*{
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    /* Para activar FlexBox */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Unica One", sans-serif;
+    background-color: #E0E0E2;
+}
+nav img{
+    width: 100px;
+    border-radius: 10px;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-style: normal;
+    padding: 10px;
+    gap: 12px;
+}
+nav a:hover{
+    transition: 0.8s;
+    background-color: #B5BAD0;
+    border-radius: 10px;
+}
+.categorias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-family: "Kalam", cursive;
+    font-style: normal;
+    gap: 20px;
+}
+.categoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.categoria img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+.categoria h3{
+    font-weight: 400;
+}
+@media(width<550px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
